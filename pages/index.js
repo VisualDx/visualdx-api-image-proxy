@@ -5,21 +5,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>VisualDx API Reverse Proxy</title>
+        <title>VisualDx API Image Proxy</title>
         <meta
           name="description"
-          content="A Next.js sample app for VisualDx image proxy with authentication, caching, and SEO-friendly URLs."
+          content="A Next.js sample app implementing a reverse image proxy for the VisualDx API."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.page}>
         <main className={styles.main}>
-          <h1>VisualDx API Reverse Proxy</h1>
+          <h1>VisualDx API Image Proxy</h1>
           <p>
             This sample application provides a reverse proxy for accessing
-            VisualDx images while handling authentication, caching, and
+            images from the VisualDx API while handling authentication, caching, and
             SEO-friendly URLs.
           </p>
 
@@ -27,9 +26,9 @@ export default function Home() {
           <ol>
             <li>Clone this repository and install dependencies:</li>
             <pre>
-              <code>git clone https://github.com/your-repo/web-871-sample.git</code>
+              <code>git clone https://github.com/VisualDx/visualdx-api-image-proxy.git</code>
               <br />
-              <code>cd web-871-sample</code>
+              <code>cd visualdx-api-image-proxy</code>
               <br />
               <code>npm install</code>
             </pre>
@@ -41,7 +40,6 @@ export default function Home() {
                 TOKEN_URL=https://api.visualdx.com/v1/v1/auth/token{"\n"}
                 CLIENT_ID=your_client_id{"\n"}
                 CLIENT_SECRET=your_client_secret{"\n"}
-                ENVIRONMENT=sandbox{"\n"}
                 AUDIENCE=consumer{"\n"}
                 CACHE_TTL=259200{"\n"}
               </code>
