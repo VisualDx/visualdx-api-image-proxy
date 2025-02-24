@@ -4,7 +4,7 @@ The [VisualDx API](https://developers.visualdx.com/spec) provides the data and t
 This **Next.js sample application** is a reverse proxy for accessing the VisualDx API's extensive library of curated medical images. It features:
 
 ✅ **Automatic Token Management**: Fetches and refreshes tokens automatically.  
-✅ **Configurable Settings**: Supports different environments (`sandbox`, `prod`) and audiences (`consumer`, `clinical`).  
+✅ **Configurable Settings**: Supports different audiences (`consumer`, `clinical`).  
 ✅ **Customizable Cache TTL**: Cache duration is now adjustable via `config.js`.  
 ✅ **SEO-Friendly URLs**: Supports `/images/:size/:imageId/:filename`.  
 ✅ **Error Handling**: `302` redirects are handled invisibly, and `4xx` errors bubble up and are returned.
@@ -36,9 +36,8 @@ The project includes the following dependencies:
 
 ## Prerequisites
 
-1. **Node.js**: Install [Node.js](https://nodejs.org/) (v14 or later).
+1. **Node.js**: Install [Node.js](https://nodejs.org/) (v15 or later).
 2. **VisualDx API Access**: Obtain an API token and access credentials.
-3. **Environment Variables**: Set up the required `.env.local` file (explained below).
 
 ---
 
@@ -47,7 +46,7 @@ The project includes the following dependencies:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/visualdx-api-image-proxy.git
+git clone https://github.com/VisualDx/visualdx-api-image-proxy.git
 cd visualdx-api-image-proxy
 ```
 
@@ -70,8 +69,7 @@ TOKEN_URL=https://api.visualdx.com/v1/auth/token
 CLIENT_ID=your_client_id
 CLIENT_SECRET=your_client_secret
 
-# Environment Settings
-ENVIRONMENT=sandbox # Options: sandbox, prod
+# Audience
 AUDIENCE=consumer # Options: consumer, clinical
 
 # Cache TTL (in seconds) - Default 72 hours (72 * 3600 = 259200 seconds)
